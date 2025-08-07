@@ -25,6 +25,7 @@ This project demonstrates a common web vulnerability, **SQL Injection (SQLi)**, 
 3.  Install the required packages: `pip install -r requirements.txt`
 4.  Initialize the database (run this once): `python -c "from app import init_db; init_db()"`
 5.  Run the application: `flask run`
+<img width="1920" height="1080" alt="exploit" src="https://github.com/user-attachments/assets/322660a4-531f-4f3a-a118-3ce84a576446" />
 
 ---
 
@@ -58,7 +59,8 @@ Python
 
 # SECURE VERSION: Using Parameterized Queries
 query = "SELECT * FROM users WHERE username = ? AND password = ?"
-cursor = db.execute(query, (username, password))
+cursor = db.execute(query, (username, password))<img width="1920" height="1080" alt="secure" src="https://github.com/user-attachments/assets/68cbc567-9c05-45f3-b3b2-799120b2f846" />
+
 What I Learned
 Hands-on experience with the #1 OWASP Top 10 vulnerability.
 
